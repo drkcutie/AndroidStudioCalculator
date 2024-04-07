@@ -187,6 +187,7 @@ public class Connect3 extends AppCompatActivity {
 
     public void initialize() {
         //Initialize layout and text;
+        Toast.makeText(this, "Binangbang, Derrick C. BATCH 1 - CONNECT 3", Toast.LENGTH_SHORT).show();
         playerText = findViewById(R.id.playerTurn);
         layout = findViewById(R.id.Layout);
 
