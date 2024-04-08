@@ -125,12 +125,12 @@ public class Connect3 extends AppCompatActivity {
 
         if(vertical || horizontal || diagonalLeft || diagonalRight)
         {
+            switchTurns();
             String winner = self == 1 ? "Player 1" : "Player 2";
             Toast.makeText(this, winner + " wins", Toast.LENGTH_SHORT).show();
             String congrats = winner + ". You win!";
             playerText.setText(congrats);
             // need to fix font size when notifying the winner
-
 
             setClickable(false);
         }
