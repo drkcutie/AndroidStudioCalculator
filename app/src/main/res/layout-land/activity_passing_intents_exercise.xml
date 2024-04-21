@@ -7,99 +7,88 @@
     tools:context=".PassingIntentsExercise">
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="10dp">
 
-            <!-- First Name -->
             <TextView
-                android:id="@+id/textStudentProfile"
-                android:layout_width="match_parent"
+                android:id="@+id/fieldRegistrationForm"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Student Profile" />
+                android:text="Student Registration Form" />
+
+            <TextView
+                android:id="@+id/textCompleteName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complete Name" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textFirstName"
+                <EditText
+                    android:id="@+id/fieldFirstName"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="First Name: " />
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName" />
 
-                <TextView
-                    android:id="@+id/tfFirstName"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:gravity="start"
-                    android:text="tfFirstName" />
-            </LinearLayout>
-
-            <!-- Last Name -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textLastName"
+                <EditText
+                    android:id="@+id/fieldLastName"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Last Name:" />
-
-                <TextView
-                    android:id="@+id/tfLastName"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="tfLastName" />
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
-            <!-- Gender -->
-            <LinearLayout
+            <TextView
+                android:id="@+id/textGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender" />
+
+            <RadioGroup
+                android:id="@+id/groupGender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textGender"
+                <RadioButton
+                    android:id="@+id/RbtnMale"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Gender:" />
+                    android:text="Male" />
 
-                <TextView
-                    android:id="@+id/tfGender"
+                <RadioButton
+                    android:id="@+id/RbtnFemale"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="tfGender" />
-            </LinearLayout>
+                    android:layout_weight="1"
+                    android:text="Female" />
 
-            <!-- Student ID -->
+                <RadioButton
+                    android:id="@+id/RbtnOthers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Others" />
+            </RadioGroup>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -107,21 +96,20 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Student ID:" />
+                    android:text="Student ID" />
 
-                <TextView
-                    android:id="@+id/tfStudentID"
+                <EditText
+                    android:id="@+id/fieldStudentID"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="tfStudentID" />
+                    android:ems="10"
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
-            <!-- Birth Date -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -129,65 +117,62 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Birth Date:" />
+                    android:text="Birthdate" />
 
-                <TextView
-                    android:id="@+id/tfBirthDate"
+                <EditText
+                    android:id="@+id/fieldBirthDate"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="tfBirthDate" />
+                    android:ems="10"
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
-            <!-- Phone Number -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textPhoneNumber"
+                    android:id="@+id/textNumber"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Phone Number: " />
+                    android:text="Phone Number" />
 
-                <TextView
-                    android:id="@+id/tfPhoneNumber"
+                <EditText
+                    android:id="@+id/fieldNumber"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="tfPhoneNumber" />
+                    android:ems="10"
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
-            <!-- Email Address -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textEmailAddress"
+                    android:id="@+id/textEmail"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Email Address: " />
+                    android:text="Email Address" />
 
-                <TextView
-                    android:id="@+id/tfEmailAddress"
+                <EditText
+                    android:id="@+id/fieldEmail"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="tfEmailAddress" />
+                    android:ems="10"
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
-            <!-- Religion -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -195,21 +180,20 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Religion: " />
+                    android:text="Religion" />
 
-                <TextView
-                    android:id="@+id/tfReligion"
+                <EditText
+                    android:id="@+id/fieldReligion"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="tfReligion" />
+                    android:ems="10"
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
-            <!-- Ethnicity -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -217,21 +201,20 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Ethnicity: " />
+                    android:text="Ethnicity" />
 
-                <TextView
-                    android:id="@+id/tfEthnicity"
+                <EditText
+                    android:id="@+id/fieldEthnicity"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="tfEthnicity" />
+                    android:ems="10"
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
-            <!-- Course -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -239,22 +222,20 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Course: " />
+                    android:text="Course" />
 
-                <TextView
-                    android:id="@+id/tfCourse"
+                <EditText
+                    android:id="@+id/fieldCourse"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="tfCourse" />
+                    android:ems="10"
+                    android:inputType="textPersonName" />
             </LinearLayout>
-
-            <!-- Address -->
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -262,23 +243,38 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Address: " />
+                    android:text="Address" />
 
-                <TextView
-                    android:id="@+id/tfAddress"
+                <EditText
+                    android:id="@+id/fieldAddress"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="tfAddress" />
-
+                    android:ems="10"
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
-            <Button
-                android:id="@+id/btnReturn"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Return" />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnClearForm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Clear" />
+
+                <Button
+                    android:id="@+id/btnSubmitForm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Submit" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

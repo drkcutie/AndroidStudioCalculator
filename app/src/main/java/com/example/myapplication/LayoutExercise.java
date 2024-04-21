@@ -15,6 +15,8 @@ public class LayoutExercise extends AppCompatActivity {
     Button btnCalculator;
 
     Button btnConnect3;
+
+    Button btnPassing;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,7 @@ public class LayoutExercise extends AppCompatActivity {
         btnNotify = findViewById(R.id.btnButtonExercise);
         btnCalculator = findViewById(R.id.btnCalculator);
         btnConnect3 = findViewById(R.id.btnConnect);
+        btnPassing = findViewById(R.id.btnPassing);
         btnOpen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +57,13 @@ public class LayoutExercise extends AppCompatActivity {
             }
         });
 
-
+        btnPassing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (LayoutExercise.this, PassingIntentsExercise.class);
+                startActivity(intent);
+            }
+        });
 
 //        final boolean[] status = {false};
 //        btn3.setOnClickListener(new View.OnClickListener() {

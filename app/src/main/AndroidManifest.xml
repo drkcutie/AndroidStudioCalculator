@@ -12,10 +12,10 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".PassingIntentsExercise2"
+            android:name=".PassingIntentsExercise"
             android:exported="false" />
         <activity
-            android:name=".PassingIntentsExercise"
+            android:name=".PassingIntentsExercise2"
             android:exported="false" />
         <activity
             android:name=".Connect3"
