@@ -9,8 +9,8 @@
                 android:id="@+id/btnChangeSize"
                 android:title="Change Size" />
             <item
-                android:id="@+id/btnChangeShape"
-                android:title="Change Shape" />
+                android:id="@+id/btnChangeImage"
+                android:title="Change Image" />
             <item
                 android:id="@+id/btnChangeTextColor"
                 android:title="Change Text Color" />

@@ -58,10 +58,11 @@ public class MenuExercise extends AppCompatActivity {
         {
             int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
             btnChanger.setTextColor(color);
-        }else if (item.getItemId() == R.id.btnChangeShape)
+        }else if (item.getItemId() == R.id.btnChangeImage)
         {
             int[] images = {R.drawable.kcajero,R.drawable.zakfloreta, R.drawable.lainesegundo, R.drawable.derrickbinangbang,R.drawable.tristantolentino};
-            btnChanger.setBackgroundResource(images[imageIndex]);
+            btnChanger.setBackgroundResource( images[imageIndex]);
+
             imageIndex++;
             if(imageIndex == images.length)
                 imageIndex = 0;
