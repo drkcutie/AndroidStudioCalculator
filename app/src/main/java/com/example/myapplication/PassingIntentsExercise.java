@@ -59,7 +59,6 @@ public class PassingIntentsExercise extends AppCompatActivity {
                 }
                 int selected = groupGender.indexOfChild(findViewById(groupGender.getCheckedRadioButtonId())); // Assuming groupGender is your RadioGroup variable
                 String gender;
-
                 switch (selected) {
                     case 0:
                         gender = "Male";
@@ -71,7 +70,7 @@ public class PassingIntentsExercise extends AppCompatActivity {
                         gender = "Other";
                         break;
                     default:
-                        Toast.makeText(PassingIntentsExercise.this, "Gender not selected", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(PassingIntentsExercise.this, "Please ensure all fields are filled out before proceeding", Toast.LENGTH_SHORT).show();
                         return;
                 }
                 ;
@@ -115,7 +114,6 @@ public void initialize()
     course = findViewById(R.id.fieldCourse);
     address = findViewById(R.id.fieldAddress);
     clear = findViewById(R.id.btnClearForm);
-
     editText = new EditText[]{
             firstName, lastName, studentID, birthDate, phoneNumber, email, religion, ethnicity, course, address
 };
