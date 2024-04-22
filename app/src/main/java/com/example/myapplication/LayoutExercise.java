@@ -9,14 +9,7 @@ import android.widget.Button;
 
 public class LayoutExercise extends AppCompatActivity {
 
-    Button btnOpen;
-    Button btnNotify;
-    Button btnLayout;
-    Button btnCalculator;
-
-    Button btnConnect3;
-
-    Button btnPassing;
+    Button btnOpen,btnNotify,btnLayout,btnCalculator,btnConnect3,btnPassing, btnMenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +19,7 @@ public class LayoutExercise extends AppCompatActivity {
         btnCalculator = findViewById(R.id.btnCalculator);
         btnConnect3 = findViewById(R.id.btnConnect);
         btnPassing = findViewById(R.id.btnPassing);
+        btnMenu = findViewById(R.id.btnMenu);
         btnOpen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,6 +55,13 @@ public class LayoutExercise extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent (LayoutExercise.this, PassingIntentsExercise.class);
+                startActivity(intent);
+            }
+        });
+        btnMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LayoutExercise.this, MenuExercise.class);
                 startActivity(intent);
             }
         });
