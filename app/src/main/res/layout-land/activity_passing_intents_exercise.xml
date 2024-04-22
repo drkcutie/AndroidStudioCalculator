@@ -8,7 +8,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,23 +20,31 @@
                 android:id="@+id/fieldRegistrationForm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Student Registration Form" />
+                android:fontFamily="sans-serif-black"
+                android:hint="First Name"
+                android:text="Student Registration Form"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/textCompleteName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Complete Name" />
+                android:text="Complete Name"
+                android:textColor="#000000" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:padding="5dp">
 
                 <EditText
                     android:id="@+id/fieldFirstName"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="28dp"
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="First Name"
@@ -44,8 +52,9 @@
 
                 <EditText
                     android:id="@+id/fieldLastName"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="28dp"
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="Last Name"
@@ -54,33 +63,35 @@
 
             <TextView
                 android:id="@+id/textGender"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Gender" />
+                android:text="Gender"
+                android:textColor="#000000" />
 
             <RadioGroup
                 android:id="@+id/groupGender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/RbtnMale"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Male" />
 
                 <RadioButton
                     android:id="@+id/RbtnFemale"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Female" />
 
                 <RadioButton
                     android:id="@+id/RbtnOthers"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Others" />
@@ -89,6 +100,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -96,7 +108,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Student ID" />
+                    android:text="Student ID"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
 
                 <EditText
                     android:id="@+id/fieldStudentID"
@@ -110,6 +124,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -117,7 +132,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Birthdate" />
+                    android:text="Birthdate"
+                    android:textColor="#000000" />
 
                 <EditText
                     android:id="@+id/fieldBirthDate"
@@ -131,6 +147,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -138,7 +155,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Phone Number" />
+                    android:text="Phone Number"
+                    android:textColor="#000000" />
 
                 <EditText
                     android:id="@+id/fieldNumber"
@@ -152,6 +170,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -159,7 +178,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Email Address" />
+                    android:text="Email Address"
+                    android:textColor="#000000" />
 
                 <EditText
                     android:id="@+id/fieldEmail"
@@ -173,6 +193,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -180,7 +201,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Religion" />
+                    android:text="Religion"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
 
                 <EditText
                     android:id="@+id/fieldReligion"
@@ -194,6 +217,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -201,7 +225,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Ethnicity" />
+                    android:text="Ethnicity"
+                    android:textColor="#000000" />
 
                 <EditText
                     android:id="@+id/fieldEthnicity"
@@ -215,6 +240,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -222,7 +248,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Course" />
+                    android:text="Course"
+                    android:textColor="#000000" />
 
                 <EditText
                     android:id="@+id/fieldCourse"
@@ -236,6 +263,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -243,7 +271,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Address" />
+                    android:text="Address"
+                    android:textColor="#000000" />
 
                 <EditText
                     android:id="@+id/fieldAddress"
@@ -257,18 +286,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btnClearForm"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Clear" />
 
                 <Button
                     android:id="@+id/btnSubmitForm"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Submit" />

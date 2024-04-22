@@ -7,32 +7,30 @@
     tools:context=".PassingIntentsExercise">
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <!-- First Name -->
             <TextView
                 android:id="@+id/textStudentProfile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Student Profile" />
+                android:fontFamily="sans-serif-black"
+                android:text="Student Profile"
+                android:textColor="#000000"
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -40,7 +38,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="First Name: " />
+                    android:fontFamily="sans-serif-black"
+                    android:text="First Name: "
+                    android:textColor="#000000" />
 
                 <TextView
                     android:id="@+id/tfFirstName"
@@ -56,6 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -63,7 +64,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Last Name:" />
+                    android:fontFamily="sans-serif-black"
+                    android:text="Last Name:"
+                    android:textColor="#000000" />
 
                 <TextView
                     android:id="@+id/tfLastName"
@@ -78,6 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -85,7 +89,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Gender:" />
+                    android:fontFamily="sans-serif-black"
+                    android:text="Gender:"
+                    android:textColor="#000000" />
 
                 <TextView
                     android:id="@+id/tfGender"
@@ -100,6 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -107,7 +114,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Student ID:" />
+                    android:fontFamily="sans-serif-black"
+                    android:text="Student ID:"
+                    android:textColor="#000000" />
 
                 <TextView
                     android:id="@+id/tfStudentID"
@@ -122,6 +131,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -129,7 +139,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Birth Date:" />
+                    android:fontFamily="sans-serif-black"
+                    android:text="Birth Date:"
+                    android:textColor="#000000" />
 
                 <TextView
                     android:id="@+id/tfBirthDate"
@@ -144,6 +156,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -151,7 +164,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Phone Number: " />
+                    android:fontFamily="sans-serif-black"
+                    android:text="Phone Number: "
+                    android:textColor="#000000" />
 
                 <TextView
                     android:id="@+id/tfPhoneNumber"
@@ -166,6 +181,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -173,7 +189,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Email Address: " />
+                    android:fontFamily="sans-serif-black"
+                    android:text="Email Address: "
+                    android:textColor="#000000" />
 
                 <TextView
                     android:id="@+id/tfEmailAddress"
@@ -188,6 +206,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -195,7 +214,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Religion: " />
+                    android:fontFamily="sans-serif-black"
+                    android:text="Religion: "
+                    android:textColor="#000000" />
 
                 <TextView
                     android:id="@+id/tfReligion"
@@ -210,6 +231,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -217,7 +239,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Ethnicity: " />
+                    android:fontFamily="sans-serif-black"
+                    android:text="Ethnicity: "
+                    android:textColor="#000000" />
 
                 <TextView
                     android:id="@+id/tfEthnicity"
@@ -232,6 +256,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -239,7 +264,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Course: " />
+                    android:fontFamily="sans-serif-black"
+                    android:text="Course: "
+                    android:textColor="#000000" />
 
                 <TextView
                     android:id="@+id/tfCourse"
@@ -262,7 +289,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Address: " />
+                    android:fontFamily="sans-serif-black"
+                    android:text="Address: "
+                    android:textColor="#000000" />
 
                 <TextView
                     android:id="@+id/tfAddress"
@@ -281,4 +310,5 @@
 
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

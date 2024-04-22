@@ -22,18 +22,25 @@
             android:id="@+id/fieldRegistrationForm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:hint="First Name"
-            android:text="Student Registration Form" />
+            android:text="Student Registration Form"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textCompleteName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Complete Name" />
+            android:layout_marginTop="10dp"
+            android:text="Complete Name"
+            android:textColor="#000000" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:padding="5dp">
 
             <EditText
@@ -61,12 +68,14 @@
             android:id="@+id/textGender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Gender" />
+            android:text="Gender"
+            android:textColor="#000000" />
 
         <RadioGroup
             android:id="@+id/groupGender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <RadioButton
@@ -94,20 +103,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textStudentID"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Student ID" />
+                android:layout_weight="1"
+                android:text="Student ID"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
 
             <EditText
                 android:id="@+id/fieldStudentID"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:ems="10"
                 android:inputType="textPersonName" />
         </LinearLayout>
@@ -115,20 +127,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textBirthDate"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="Birthdate" />
+                android:layout_weight="1"
+                android:text="Birthdate"
+                android:textColor="#000000" />
 
             <EditText
                 android:id="@+id/fieldBirthDate"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:ems="10"
                 android:inputType="textPersonName" />
         </LinearLayout>
@@ -136,21 +150,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textNumber"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="Phone Number" />
+                android:layout_weight="1"
+                android:text="Phone Number"
+                android:textColor="#000000" />
 
             <EditText
                 android:id="@+id/fieldNumber"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:ems="10"
                 android:inputType="textPersonName" />
         </LinearLayout>
@@ -158,21 +173,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textEmail"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="Email Address" />
+                android:layout_weight="1"
+                android:text="Email Address"
+                android:textColor="#000000" />
 
             <EditText
                 android:id="@+id/fieldEmail"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:ems="10"
                 android:inputType="textPersonName" />
         </LinearLayout>
@@ -180,20 +196,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textReligion"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="Religion" />
+                android:layout_weight="1"
+                android:text="Religion"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
 
             <EditText
                 android:id="@+id/fieldReligion"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:ems="10"
                 android:inputType="textPersonName" />
         </LinearLayout>
@@ -201,20 +220,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textEthnicity"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="Ethnicity" />
+                android:layout_weight="1"
+                android:text="Ethnicity"
+                android:textColor="#000000" />
 
             <EditText
                 android:id="@+id/fieldEthnicity"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:ems="10"
                 android:inputType="textPersonName" />
         </LinearLayout>
@@ -222,21 +243,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textCourse"
-                android:layout_width="57dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="Course" />
+                android:layout_weight="1"
+                android:text="Course"
+                android:textColor="#000000" />
 
             <EditText
                 android:id="@+id/fieldCourse"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:ems="10"
                 android:inputType="textPersonName" />
         </LinearLayout>
@@ -244,20 +266,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textAddress"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="Address" />
+                android:layout_weight="1"
+                android:text="Address"
+                android:textColor="#000000" />
 
             <EditText
                 android:id="@+id/fieldAddress"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:ems="10"
                 android:inputType="textPersonName" />
         </LinearLayout>
@@ -265,6 +289,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <Button

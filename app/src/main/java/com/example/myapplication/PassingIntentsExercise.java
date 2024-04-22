@@ -98,7 +98,7 @@ public class PassingIntentsExercise extends AppCompatActivity {
 
 public void initialize()
 {
-
+    Toast.makeText(this, "Binangbang, Derrick - PASSING INTENTS EXERCIS", Toast.LENGTH_SHORT).show();
     firstName = findViewById(R.id.fieldFirstName);
     lastName = findViewById(R.id.fieldLastName);
     groupGender = findViewById(R.id.groupGender);

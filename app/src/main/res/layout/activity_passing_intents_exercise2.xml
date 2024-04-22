@@ -6,279 +6,308 @@
     android:layout_height="match_parent"
     tools:context=".PassingIntentsExercise">
 
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- First Name -->
+        <TextView
+            android:id="@+id/textStudentProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Student Profile"
+            android:textColor="#000000"
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            <!-- First Name -->
             <TextView
-                android:id="@+id/textStudentProfile"
-                android:layout_width="match_parent"
+                android:id="@+id/textFirstName"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Student Profile" />
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="First Name: "
+                android:textColor="#000000" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tfFirstName"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:layout_weight="2"
+                android:gravity="start"
+                android:text="tfFirstName" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textFirstName"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="First Name: " />
+        <!-- Last Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/tfFirstName"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:gravity="start"
-                    android:text="tfFirstName" />
-            </LinearLayout>
-
-            <!-- Last Name -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textLastName"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Last Name:"
+                android:textColor="#000000" />
 
-                <TextView
-                    android:id="@+id/textLastName"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Last Name:" />
-
-                <TextView
-                    android:id="@+id/tfLastName"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="tfLastName" />
-            </LinearLayout>
-
-            <!-- Gender -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tfLastName"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:layout_weight="2"
+                android:text="tfLastName" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textGender"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Gender:" />
+        <!-- Gender -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/tfGender"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="tfGender" />
-            </LinearLayout>
-
-            <!-- Student ID -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textGender"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Gender:"
+                android:textColor="#000000" />
 
-                <TextView
-                    android:id="@+id/textStudentID"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Student ID:" />
-
-                <TextView
-                    android:id="@+id/tfStudentID"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="tfStudentID" />
-            </LinearLayout>
-
-            <!-- Birth Date -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tfGender"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:layout_weight="2"
+                android:text="tfGender" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textBirthDate"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Birth Date:" />
+        <!-- Student ID -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/tfBirthDate"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="tfBirthDate" />
-            </LinearLayout>
-
-            <!-- Phone Number -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textStudentID"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Student ID:"
+                android:textColor="#000000" />
 
-                <TextView
-                    android:id="@+id/textPhoneNumber"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Phone Number: " />
-
-                <TextView
-                    android:id="@+id/tfPhoneNumber"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="tfPhoneNumber" />
-            </LinearLayout>
-
-            <!-- Email Address -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tfStudentID"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:layout_weight="2"
+                android:text="tfStudentID" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textEmailAddress"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Email Address: " />
+        <!-- Birth Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/tfEmailAddress"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="tfEmailAddress" />
-            </LinearLayout>
-
-            <!-- Religion -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textBirthDate"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Birth Date:"
+                android:textColor="#000000" />
 
-                <TextView
-                    android:id="@+id/textReligion"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Religion: " />
-
-                <TextView
-                    android:id="@+id/tfReligion"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="tfReligion" />
-            </LinearLayout>
-
-            <!-- Ethnicity -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tfBirthDate"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:layout_weight="2"
+                android:text="tfBirthDate" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textEthnicity"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Ethnicity: " />
+        <!-- Phone Number -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/tfEthnicity"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="tfEthnicity" />
-            </LinearLayout>
-
-            <!-- Course -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textPhoneNumber"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Phone Number: "
+                android:textColor="#000000" />
 
-                <TextView
-                    android:id="@+id/textCourse"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Course: " />
-
-                <TextView
-                    android:id="@+id/tfCourse"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="tfCourse" />
-            </LinearLayout>
-
-            <!-- Address -->
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tfPhoneNumber"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:layout_weight="2"
+                android:text="tfPhoneNumber" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textAddress"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Address: " />
+        <!-- Email Address -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/tfAddress"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="tfAddress" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/btnReturn"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textEmailAddress"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Return" />
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Email Address: "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tfEmailAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="tfEmailAddress" />
+        </LinearLayout>
+
+        <!-- Religion -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textReligion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Religion: "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tfReligion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="tfReligion" />
+        </LinearLayout>
+
+        <!-- Ethnicity -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textEthnicity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Ethnicity: "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tfEthnicity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="tfEthnicity" />
+        </LinearLayout>
+
+        <!-- Course -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textCourse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Course: "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tfCourse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="tfCourse" />
+        </LinearLayout>
+
+        <!-- Address -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Address: "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tfAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="tfAddress" />
 
         </LinearLayout>
-    </ScrollView>
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
