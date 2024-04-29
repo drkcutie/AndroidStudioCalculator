@@ -9,8 +9,8 @@
                 android:id="@+id/btnChangeSize"
                 android:title="Change Size" />
             <item
-                android:id="@+id/btnChangeImage"
-                android:title="Change Image" />
+                android:id="@+id/btnChangeColor"
+                android:title="Change Button Color" />
             <item
                 android:id="@+id/btnChangeTextColor"
                 android:title="Change Text Color" />
@@ -18,10 +18,10 @@
                 android:id="@+id/btnChangeText"
                 android:title="Change Text" />
             <item
-                android:id="@+id/btnChangeBG"
+                android:id="@+id/btnChangeClickable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:title="Change BG" />
+                android:title="Change Visible" />
         </menu>
     </item>
     <item

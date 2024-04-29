@@ -8,79 +8,67 @@
     android:padding="20dp"
     tools:context=".LayoutExercise">
 
-    <Button
-        android:id="@+id/btnButtonExercise"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Button Exercise"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnOpen" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp">
 
-    <Button
-        android:id="@+id/btnCalculator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Calculator Exercise"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnConnect" />
+        <Button
+            android:id="@+id/btnButtonExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Button Exercise" />
 
-    <Button
-        android:id="@+id/btnOpen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Layout Exercise"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Menus" />
 
-    <Button
-        android:id="@+id/btnConnect"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Connect3 Exercise"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnButtonExercise" />
+        <Button
+            android:id="@+id/btnPassing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Passing Intents" />
 
-    <Button
-        android:id="@+id/btnPassing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Passing Intents"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCalculator" />
+        <Button
+            android:id="@+id/btnOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Layout Exercise" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Fragments"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPassing" />
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Connect3 Exercise" />
 
-    <Button
-        android:id="@+id/btnMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Menus"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Fragments" />
+
+        <Button
+            android:id="@+id/btnCalculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Calculator Exercise" />
+
+        <Button
+            android:id="@+id/btnOpeningMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opening Maps" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

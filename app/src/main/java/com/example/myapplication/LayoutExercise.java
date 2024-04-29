@@ -3,13 +3,16 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.net.URI;
+
 public class LayoutExercise extends AppCompatActivity {
 
-    Button btnOpen,btnNotify,btnLayout,btnCalculator,btnConnect3,btnPassing, btnMenu;
+    Button btnOpen,btnNotify,btnLayout,btnCalculator,btnConnect3,btnPassing, btnMenu, btnOpeningMaps;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +23,7 @@ public class LayoutExercise extends AppCompatActivity {
         btnConnect3 = findViewById(R.id.btnConnect);
         btnPassing = findViewById(R.id.btnPassing);
         btnMenu = findViewById(R.id.btnMenu);
+        btnOpeningMaps = findViewById(R.id.btnOpeningMaps);
         btnOpen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +58,7 @@ public class LayoutExercise extends AppCompatActivity {
         btnPassing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent (LayoutExercise.this, PassingIntentsExercise.class);
+                Intent intent = new Intent(LayoutExercise.this, PassingIntentsExercise.class);
                 startActivity(intent);
             }
         });
@@ -66,40 +70,14 @@ public class LayoutExercise extends AppCompatActivity {
             }
         });
 
-//        final boolean[] status = {false};
-//        btn3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                final int min = 1;
-//                final int max = 10;
-//                final int random = new Random().nextInt((max - min) + 1) + min;
-//                if(!status[0])
-//                {
-//                    setActivityBackgroundColor(1);
-//                    status[0] = true;
-//                }
-//                else
-//                {
-//                    setActivityBackgroundColor(0);
-//                    status[0] = false;
-//                }
-//
-//
-//
-//
-//            }
-//        });
+        btnOpeningMaps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LayoutExercise.this, MapsExercise.class);
+                 startActivity(intent);
 
-
+            }
+        });
     }
-//    public void setActivityBackgroundColor(int color) {
-//        ConstraintLayout layout = findViewById(R.id.background);
-//        if(color == 1)
-//            layout.setBackgroundColor(BLACK);
-//        else
-//            layout.setBackgroundColor(WHITE);
-//
-//
-//    }
 
 }

@@ -17,10 +17,11 @@
 
         <Button
             android:id="@+id/btnTransformingButton"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="174dp"
-            android:background="@drawable/round_button"
-            android:layout_height="166dp" />
+            android:layout_width="179dp"
+            android:layout_height="177dp"
+            android:background="#2196F3"
+            android:text="Button" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
