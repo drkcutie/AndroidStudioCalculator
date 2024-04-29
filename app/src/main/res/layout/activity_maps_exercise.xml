@@ -2,49 +2,97 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MapsExercise">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_margin="5dp"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
-        <Button
-            android:id="@+id/btnBali"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bali" />
-
-        <Button
+        <ImageButton
             android:id="@+id/btnMaui"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Maui" />
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/mauistreet" />
 
-        <Button
-            android:id="@+id/btnParis"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/Maui"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Paris" />
+            android:text="Maui"
+            android:textAlignment="center"
+            android:textColor="#03A9F4" />
 
-        <Button
+        <ImageButton
             android:id="@+id/btnRome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rome" />
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/romestreet" />
 
-        <Button
-            android:id="@+id/btnTokyo"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tokyo" />
+            android:text="Rome"
+            android:textAlignment="center"
+            android:textColor="#03A9F4" />
+
+        <ImageButton
+            android:id="@+id/btnParis"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/paristreet" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paris"
+            android:textAlignment="center"
+            android:textColor="#03A9F4" />
+
+        <ImageButton
+            android:id="@+id/btnTokyo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/tokyostreet" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tokyo"
+            android:textAlignment="center"
+            android:textColor="#03A9F4" />
+
+        <ImageButton
+            android:id="@+id/btnBali"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/balistreet" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bali"
+            android:textAlignment="center"
+            android:textColor="#03A9F4" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
